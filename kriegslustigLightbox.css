@@ -1,4 +1,4 @@
-.lightbox {
+.kriegslustigLightbox {
   display: none;
   position: absolute;
   justify-content: center;
@@ -12,17 +12,17 @@
   transition: all .2s;
 }
 
-.lightbox--js--open {
+.kriegslustigLightbox--js--open {
   opacity: 1;
   height: 100vh;
 }
 
-.lightbox__wrapper {
+.kriegslustigLightbox__wrapper {
   padding: 2rem;
   background-color: hsl(0, 0%, 100%);
 }
 
-.lightbox__background {
+.kriegslustigLightbox__background {
   z-index: -1;
   position: absolute;
   left: 0;

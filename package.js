@@ -12,10 +12,10 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.use('templating', 'client')
-  api.export('lightbox', 'client')
+  api.export('kriegslustigLightbox', 'client')
   api.addFiles([
-    'kriegslustig:lightbox.html'
-  , 'kriegslustig:lightbox.css'
-  , 'kriegslustig:lightbox.js'
+    'kriegslustigLightbox.html'
+  , 'kriegslustigLightbox.css'
+  , 'kriegslustigLightbox.js'
   ], 'client')
 })

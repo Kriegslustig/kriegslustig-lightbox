@@ -2,7 +2,7 @@ boxes = {}
 
 Lightbox = {
   config: {
-    openClass: 'lightbox--js--open'
+    openClass: 'kriegslustigLightbox--js--open'
   }
 , init: function () {
     var self = this
