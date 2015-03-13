@@ -28,7 +28,10 @@ kriegslustigLightbox.Lightbox = {
   }
 , open: function () {
     var self = this
+  , hashSplit = location.href.split('#')
     if(self.element.className.indexOf(self.config.openClass) > -1) return
+    hashSplit[1] = self.name
+    location.href = hashSplit.join('#')
     self.element.style.display = 'flex'
     setTimeout(function () {
       if(self.element.className.indexOf(self.config.openClass) > -1) return
@@ -39,6 +42,7 @@ kriegslustigLightbox.Lightbox = {
 , close: function () {
     var self = this
     if(self.element.className.indexOf(self.config.openClass) < 0) return
+    location.href = location.href.split('#')[0] + '#'
     self.element.className = self.element.className.replace(' ' + self.config.openClass, '')
     setTimeout(function () {
       self.element.style.display = 'none'
