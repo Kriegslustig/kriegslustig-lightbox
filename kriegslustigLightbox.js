@@ -1,6 +1,8 @@
-boxes = {}
+kriegslustigLightbox = {
+  boxes: {}
+}
 
-Lightbox = {
+kriegslustigLightbox.Lightbox = {
   config: {
     openClass: 'kriegslustigLightbox--js--open'
   }
@@ -46,8 +48,8 @@ Lightbox = {
 
 Template.kriegslustigLightbox.rendered = function () {
   var self = this
-  boxes[self.data.name] = Object.create(Lightbox)
-  boxes[self.data.name].name = self.data.name
-  boxes[self.data.name].element = this.firstNode
-  boxes[self.data.name].init()
+  kriegslustigLightbox.boxes[self.data.name] = Object.create(kriegslustigLightbox.Lightbox)
+  kriegslustigLightbox.boxes[self.data.name].name = self.data.name
+  kriegslustigLightbox.boxes[self.data.name].element = this.firstNode
+  kriegslustigLightbox.boxes[self.data.name].init()
 }
