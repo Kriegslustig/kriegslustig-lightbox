@@ -48,6 +48,10 @@ kriegslustigLightbox.Lightbox = {
 
 Template.kriegslustigLightbox.rendered = function () {
   var self = this
+  if(!self.data.name) {
+    console.log('Failed to initiate lightbox, no name given')
+    return false
+  }
   kriegslustigLightbox.boxes[self.data.name] = Object.create(kriegslustigLightbox.Lightbox)
   kriegslustigLightbox.boxes[self.data.name].name = self.data.name
   kriegslustigLightbox.boxes[self.data.name].element = this.firstNode
