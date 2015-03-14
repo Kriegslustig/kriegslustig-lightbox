@@ -46,3 +46,19 @@ kriegslustigLightbox.boxes['message'].open()
 // To close the kriegslustigLightbox called 'message'
 kriegslustigLightbox.boxes['message'].close()
 ```
+
+## Hooking into close and open events
+kriegslustig:lightbox triggers customEvent's for both closing and opening them.
+
+They don't bubble, because their customEvents. This means that you have to selt the eventlistener to the element that the event is triggered from. In kriegslustig:lightbox, that would be `kriegslustigLightbox.boxes['somebox'].element`. For exmple:
+
+```
+// To listen for a opening event
+kriegslustigLightbox.boxes['message'].element.addEventListener('open', function (e) {
+  console.log('opening', e) 
+})
+// To listen for a closing event
+kriegslustigLightbox.boxes['message'].element.addEventListener('close', function (e) {
+  console.log('closing', e) 
+})
+```
