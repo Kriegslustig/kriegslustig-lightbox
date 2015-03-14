@@ -1,6 +1,6 @@
 Package.describe({
   name: 'kriegslustig:lightbox',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'A simple Lightbox',
   git: 'https://github.com/Kriegslustig/kriegslustig-lightbox',
   documentation: 'README.md'

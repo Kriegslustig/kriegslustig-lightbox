@@ -1,4 +1,4 @@
-# kriegslustig-lightbox
+# kriegslustig-lightbox v0.0.2
 A simple meteor package that defines a template 'kriegslustigLightbox'
 
 # Install
